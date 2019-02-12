@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport content=width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!---- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!----- Material Icons-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>EMployee Tracker</title>
+  </head>
+  <body>
+    <fieldset>
+      <lable for="fNameInput">First Name</lable>
+      <input id="fNameInput" type="text" name="firstName" />
+      <lable for="lNameInput">Last Name</lable>
+      <input id="lNameInput" type="text" name="lastName" />
+      <lable for="emailInput">Email Address</lable>
+      <input id="emailInput" type="text" name="emailAddress" />
+      <lable for="phoneInput">Phone Number</lable>
+      <input id="phoneInput" type="text" name="phoneNumber" />
+      <lable for="bDayInput">Birthday</lable>
+      <input id="bDayInput" type="date" name="bDay" />
+      <lable for="deptInput">Department</lable>
+      <input id="deptInput" type="text" name="departmentName" />
+      <form action="#">
+        <label>
+          <input id="isSupervisor" type="checkbox" value="Supervisor"/>
+          <span>Supervisor?</span>
+        </label>
+      </form>
+      <form action="#">
+        <label>
+        <input
+          class="with-gap"
+          name="gender"
+          type="radio"
+          value="Male"
+        />
+        <span>Male</span>
+        </label>
+        <label>
+        <input
+          class="with-gap"
+          name="gender"
+          type="radio"
+          value="Female"
+        />
+        <span>Female</span>
+      </label>
+     </form>
+     <button id="submit-btn">Add Employee</button>
+    </fieldset>
+
+    <section id="employeeContainer"></section>
+    <script src="scripts/buildSingleEmployee.js"></script>
+    <script src="scripts/apiManager.js"></script>
+    <script src="scripts/printAllEmployees.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

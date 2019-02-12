@@ -1,0 +1,15 @@
+{
+  "employees": [
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "phoneNumber": "",
+      "birthday": "",
+      "department": "",
+      "supervisor": false,
+      "gender": false,
+      "id": 1
+    }
+  ]
+}
